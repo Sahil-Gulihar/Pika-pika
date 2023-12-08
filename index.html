@@ -1,29 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
 </head>
-<body background="Untitled.png">
-    <h2 style="padding: 20px;padding-left: 10px; color: #2555be ;">pika pi</h2>
+<body style="background-image: url('Untitled.png');">
+    <header>
+        <h1>Pika Pi</h1>
+        <nav id="navigation">
+            <a href="https://www.linkedin.com/in/sahil-gulihar-130573249/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Sahil-Gulihar" target="_blank">Github</a>
+            <a href='instagram.html'>Instagram</a>
+        </nav>
+    </header>
 
-    <nav style="display: flex;justify-content: space-between; padding-right: 40px; box-shadow: 3px 2px 3px"> 
-        <a href="https://www.linkedin.com/in/sahil-gulihar-130573249/" style="color: orangered;">LinkedIn </a>
-        <a href="https://github.com/Sahil-Gulihar" style="color: orangered;">Github </a> 
-        <a href='instagram.html' style="color: orangered;">Instagram </a>    
-    
-    </nav>
-    <div style="text-align: center;">
-    <h3 style="padding-top: 120px; ">Welcome to This Annoying Website.</h3>
-    <h3>Enter Pokemon</h3>
+    <div class="content-container">
+        <h2>Welcome to This Annoying Website.</h2>Pokemon Image
+        <h3>Enter Pokemon</h3>
 
-    <input type="text" placeholder="Aane de" style="text-align: center; padding: 5px; margin-left: 10px; size: 100px;"id="pokemonName"> <button style="border: #2555be; background-color: #2555be; color: white; padding: 5px; margin-left: 10px; size: 20px;" onclick="getPokemonType()">Generate</button>
-    <div style="display: flexbox;">
-    <p id="result" style="border: gold; background-color: white; justify-content: center; padding-left: auto; flex-grow: 1;" ></p>
-  </div>
+        <div class="search-container">
+            <input type="text" placeholder="Aane De" id="pokemonName">
+            <button onclick="getPokemonInfo()">Generate</button>
+        </div>
 
+        <div class="result-container">
+            <p id="result"></p>
+            <img id="pokemonImage" alt="Pokemon Image">
+        </div>
     </div>
 </body>
 </html>
