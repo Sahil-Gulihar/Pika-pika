@@ -35,6 +35,10 @@ nav a {
 nav a:hover {
   font-size: 1.2em;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  box-shadow: 3px 2px 3px
 }
 
 .content-container {
@@ -80,5 +84,6 @@ button:hover {
 
 #pokemonImage {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 400px;
+  background-color: #666;
 }
