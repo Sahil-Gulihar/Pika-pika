@@ -1,6 +1,6 @@
 // main.js
 
-async function getPokemonType() {
+async function getPokemonInfo() {
   const pokemonName = document.getElementById('pokemonName').value;
   const apiUrl = 'https://pokeapi.co/api/v2/pokemon/' + pokemonName.toLowerCase();
 
