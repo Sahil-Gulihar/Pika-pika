@@ -27,15 +27,6 @@ header h1 {
 }
 
 
-nav a {
-  color: darkorchid;
-  text-decoration: none;
-/*   display: flex; */
-/*   justify-content: space-between; */
-  padding-right: 40px;
-  box-shadow: 3px 2px 3px
-}
-
 nav a:hover {
   font-size: 1.2em;
   font-weight: bold;
